@@ -31,3 +31,6 @@ We'll be grading on five areas:
 "Starting next month, we'll be partnering with a shelter that has 2000 pets available for adoption. We need this page to be able to handle that many listings."
 
 "Most people find out about us from internet searches. We need this page to appear towards the top of search results."
+
+## Madison's notes:
+List of dog names from https://www.akc.org/expert-advice/lifestyle/unique-dog-names/, the images alone did not seem to evoke enough "adopt me"-ness, and I wanted to add some additional info to intrigue would-be adopters more.

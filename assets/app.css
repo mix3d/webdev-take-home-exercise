@@ -40,3 +40,32 @@ a {
   font-family: var(--font-serif);
   text-align: center;
 }
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:	rgba(0, 0, 0, 0.7);
+  display: none;
+  overflow: hidden;
+}
+
+.show {
+  display: block!important;
+}
+
+.modal_dialog {
+  width: 95%;
+  max-height: 90%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
