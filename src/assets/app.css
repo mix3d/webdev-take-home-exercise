@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Gorditas|Open+Sans');
+
 /* Globals */
 :root {
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
+  --font-bold: 'Gorditas';
   --color-secondary: #333;
   --color-link: #635ac7;
   --bg-light: #F4F7F8;
@@ -30,6 +33,7 @@ a {
   /* padding-bottom: 2rem; */
   /* padding-top: 2rem */
   text-align: center;
+  font-family: var(--font-bold);
 }
 
 /* Header Quote */

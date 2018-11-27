@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div class="container">
+      <img src="./assets/images/dogasana.svg" height="30px">
       <a-header></a-header>
       <content>
+        <doggie-grid :doggos="doggos"></doggie-grid>
       </content>
       <a-footer></a-footer>
     </div>
@@ -13,6 +15,7 @@
 // Can't use header/footer since they're reserved element names. A for Asana.
 import aHeader from './components/Header.vue'
 import aFooter from './components/Footer.vue'
+import DoggieGrid from './components/DoggieGrid.vue'
 
 // Temp Data sources
 import {dogs} from './assets/data/dogs.json'
@@ -21,11 +24,12 @@ import breeds from './assets/data/breeds.json'
 import likes from './assets/data/likes.json'
 
 // Pretend this data came from an Ajax service
-dogs.forEach(dog => {
+dogs.forEach((dog, index) => {
   dog.name = names[Math.floor(Math.random() * names.length)]
   dog.breed = breeds[Math.floor(Math.random() * breeds.length)]
   dog.likes = likes[Math.floor(Math.random() * likes.length)]
   dog.saved = false
+  dog.id = index
 })
 
 console.log(dogs)
@@ -40,6 +44,7 @@ export default {
   components:{
     aHeader,
     aFooter,
+    DoggieGrid,
   }
 }
 </script>
