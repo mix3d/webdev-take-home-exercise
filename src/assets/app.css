@@ -4,6 +4,12 @@
   --font-serif: Georgia, serif;
   --color-secondary: #333;
   --color-link: #635ac7;
+  --bg-light: #F4F7F8;
+  --bg-dark: #405361;
+
+  --radius: 13px;
+  --soft-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  --small-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 
   font-family: var(--font-sans);
   font-weight: normal;
@@ -12,6 +18,7 @@
 
 body {
   margin: 0;
+  background: var(--bg-light);
 }
 
 a {
@@ -20,8 +27,8 @@ a {
 
 /* Global Header */
 .global-header {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  /* padding-bottom: 2rem; */
+  /* padding-top: 2rem */
   text-align: center;
 }
 
@@ -32,40 +39,17 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 460px;
+  font-style: italic;
 }
 
 /* Global Footer */
 .global-footer {
-  color: var(--color);
+  color: var(--bg-light);
   font-family: var(--font-serif);
   text-align: center;
-}
-
-#modal {
-  width: 100vw;
-  height: 100vh;
+  background: var(--bg-dark);
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background:	rgba(0, 0, 0, 0.7);
-  display: none;
-  overflow: hidden;
-}
-
-.show {
-  display: block!important;
-}
-
-.modal_dialog {
-  width: 95%;
-  max-height: 90%;
-  max-width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
+  width: 100vw;
 }

@@ -40,3 +40,20 @@ Background image from https://img.freepik.com/free-vector/bons-and-foot-prints-p
 https://fonts.google.com/specimen/Gorditas?selection.family=Gorditas|Open+Sans
 
 This font is named almost exactly like Asana's font, seemed fun, and even mentioned dogs in the description. Sold!
+
+# doggo
+
+> A Vue.js approach to Asana's takehome project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
