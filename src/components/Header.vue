@@ -1,6 +1,7 @@
 <template>
     <header class="global-header" role="banner">
         <h1>Puppy image gallery</h1>
+        <!-- transition group allows for simple switching between elements; in this case, quotes -->
         <transition-group name="slide" tag="div" class="slider">
             <div :key="quote.author">
             <blockquote class="header-quote"  @click="nextQuote">
@@ -10,17 +11,17 @@
             </div>
         </transition-group>
     </header>
-
 </template>
 
 <script>
+// TODO: Fill with more doggo quotes
 const quotes = [
     {
         text:"A dog will teach you unconditional love. If you can have that in your life, things won't be too bad.",
         author: "Robert Wagner"
     },
     {
-        text:"Some quote for brevity",
+        text:"I like dogs",
         author: "ME"
     },
 ]

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// Can't use header/footer since they're reserved. A for Asana.
+// Can't use header/footer since they're reserved element names. A for Asana.
 import aHeader from './components/Header.vue'
 import aFooter from './components/Footer.vue'
 
