@@ -34,3 +34,9 @@ We'll be grading on five areas:
 
 ## Madison's notes:
 List of dog names from https://www.akc.org/expert-advice/lifestyle/unique-dog-names/, the images alone did not seem to evoke enough "adopt me"-ness, and I wanted to add some additional info to intrigue would-be adopters more.
+
+Background image from https://img.freepik.com/free-vector/bons-and-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg but edited for actual seamless tiling.
+
+https://fonts.google.com/specimen/Gorditas?selection.family=Gorditas|Open+Sans
+
+This font is named almost exactly like Asana's font, seemed fun, and even mentioned dogs in the description. Sold!
