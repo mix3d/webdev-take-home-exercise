@@ -3,9 +3,9 @@
     <div class="container">
       <img src="./assets/images/dogasana.svg" height="30px">
       <a-header></a-header>
-      <content>
+      <article>
         <doggie-grid :doggos="doggos"></doggie-grid>
-      </content>
+      </article>
       <a-footer></a-footer>
     </div>
   </div>

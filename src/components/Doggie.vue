@@ -1,6 +1,6 @@
 <template>
     <figure class="grid-item">
-        <img :src="doggo.image">
+        <img :src="doggo.image" :title="doggo.name" :alt="alt">
         <h3>{{doggo.name}}</h3>
         <table>
             <tr>
@@ -19,7 +19,10 @@
 export default {
     props: [
         'doggo'
-    ]
+    ],
+    computed:{
+        alt() { return this.doggo.name + "'s Picture" },
+    }
 }
 </script>
 

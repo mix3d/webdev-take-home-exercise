@@ -2,11 +2,11 @@
 <div>
     <div class="grid">
         <doggie v-for="doggo in doggos" :key="doggo.id"
-        @click="selectDoggo"
+        @click="selectDoggo(doggo)"
         :doggo="doggo">
         </doggie>
     </div>
-    <modal :data="selectedDoggo" :component="DoggoModal"></modal>
+    <modal :shown="showModal" :data="selectedDoggo" :component="DoggoModal"></modal>
 </div>
 </template>
 
@@ -23,9 +23,14 @@ export default {
         return {
             selectedDoggo: null,
             DoggoModal,
+            showModal: false,
         }
     },
     methods: {
+        selectDoggo(doggo){
+            this.selectedDoggo = doggo
+            this.showModal = true
+        }
     },
     components:{
         Doggie,
