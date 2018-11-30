@@ -50,31 +50,34 @@ export default {
 </script>
 
 <style lang="scss">
-body:before{
+$width-small: 600px;
+
+body:before {
   content:'';
   width: 100%;
   position: absolute;
   top:0;
   background: url('./assets/images/bons-and-foot-prints-pattern-background_1374-18.jpg') repeat;
-  background-size: 169px 169px;
+  background-size: 169px 169px; // half-size for better size and 2x crispness
   height: 200px;
   z-index: -1;
 }
 
 #app {
-  padding: 104px 26px 26px;
+  @media (min-width: $width-small){
+    padding: 104px 26px 26px;
+  }
 }
 
 .container{
-  max-width: 900px;
   background: white;
-  border-radius: var(--radius);
-  box-shadow: var(--soft-shadow);
-  margin: 0 auto;
   padding: 1rem;
 
-  @media (min-width: 1024px) {
-    
+  @media (min-width: $width-small) {
+    max-width: 1000px;
+    border-radius: var(--radius);
+    box-shadow: var(--soft-shadow);
+    margin: 0 auto 0;
   }
   @media (min-width: 1224px) {
     

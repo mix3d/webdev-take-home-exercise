@@ -39,5 +39,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.grid {
+    display: grid;
+    // Create a grid with min-width columns of 300px, stretching to fit the container
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
 </style>

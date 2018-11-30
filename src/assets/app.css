@@ -7,12 +7,18 @@
   --font-bold: 'Gorditas';
   --color-secondary: #333;
   --color-link: #635ac7;
+
+  --accent: #F9608B;
+  --theme: #7CABBB;
+
   --bg-light: #F4F7F8;
   --bg-dark: #405361;
 
   --radius: 13px;
   --soft-shadow: 0 3px 6px rgba(0,0,0,0.16);
   --small-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+
+  --screen-small: 700px; 
 
   font-family: var(--font-sans);
   font-weight: normal;
@@ -56,4 +62,12 @@ a {
   bottom: 0;
   left: 0;
   width: 100vw;
+}
+
+/* small card, overflow hidden to cut off any children that overflow the corners */
+.card {
+  box-shadow: var(--small-shadow);
+  border-radius: var(--radius);
+  background: white;
+  overflow: hidden;
 }
