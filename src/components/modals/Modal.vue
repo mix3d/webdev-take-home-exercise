@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style lang="scss">
+$width-small: 680px;
+
 body.modal-open{
   overflow: hidden;
 }
@@ -67,7 +69,7 @@ body.modal-open{
   height: 100%;
   position: relative;
 
-  @media (min-width: 680px) {
+  @media (min-width: $width-small) {
     max-width: 900px;
     max-height: 90vh;
     margin: 0px 20px;
@@ -76,6 +78,7 @@ body.modal-open{
     transition: all .3s ease;
   }
 }
+
 button.closer {
   position: absolute;
   top: 0.5rem;
@@ -89,7 +92,7 @@ button.closer {
   line-height: 0;
   color:var(--bg-dark);
 
-  @media (min-width: 680px) {
+  @media (min-width: $width-small) {
     top: 0.5rem;
     right: 0.5rem;
     &:hover, &:active{
@@ -103,6 +106,7 @@ button.closer {
   &:active{
     color:var(--theme);
   }
+
   svg{
     width: 16px;
     height: 16px;

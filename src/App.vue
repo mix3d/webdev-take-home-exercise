@@ -41,11 +41,16 @@ export default {
       doggos: dogs
     }
   },
+  computed:{
+    savedDoggos(){
+      return this.doggos.filter(dog => dog.saved);
+    }
+  },
   components:{
     aHeader,
     aFooter,
     DoggieGrid,
-  }
+  },
 }
 </script>
 
@@ -67,10 +72,6 @@ body:before {
   display:flex;
   flex-direction: column;
   align-items: center;
-
-  // @media (min-width: $width-small){
-  //   padding: 104px 26px 26px;
-  // }
 }
 
 .container{
@@ -83,9 +84,7 @@ body:before {
     border-radius: var(--radius);
     box-shadow: var(--soft-shadow);
     margin: 80px 26px 26px;
-  }
-  @media (min-width: 1224px) {
-    
+    width:calc(100% - 52px);
   }
 }
 
