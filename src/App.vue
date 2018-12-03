@@ -6,8 +6,8 @@
       <article>
         <doggie-grid :doggos="doggos"></doggie-grid>
       </article>
-      <a-footer></a-footer>
     </div>
+    <a-footer></a-footer>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style lang="scss">
-$width-small: 600px;
+$width-small: 680px;
 
 body:before {
   content:'';
@@ -64,29 +64,29 @@ body:before {
 }
 
 #app {
-  @media (min-width: $width-small){
-    padding: 104px 26px 26px;
-  }
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  // @media (min-width: $width-small){
+  //   padding: 104px 26px 26px;
+  // }
 }
 
 .container{
   background: white;
   padding: 1rem;
+  width:100%;
 
   @media (min-width: $width-small) {
     max-width: 1000px;
     border-radius: var(--radius);
     box-shadow: var(--soft-shadow);
-    margin: 0 auto 0;
+    margin: 80px 26px 26px;
   }
   @media (min-width: 1224px) {
     
   }
-}
-
-h1, h2 {
-  font-weight: normal;
-  margin: 0 .5rem;
 }
 
 ul {

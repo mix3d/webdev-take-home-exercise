@@ -10,6 +10,7 @@
 
   --accent: #F9608B;
   --theme: #7CABBB;
+  /* --color-grey: #707070; */
 
   --bg-light: #F4F7F8;
   --bg-dark: #405361;
@@ -17,12 +18,16 @@
   --radius: 13px;
   --soft-shadow: 0 3px 6px rgba(0,0,0,0.16);
   --small-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
-
-  --screen-small: 700px; 
+  --hard-shadow: 0 2px 8px rgba(0,0,0,.25);
 
   font-family: var(--font-sans);
   font-weight: normal;
   line-height: 1.5;
+}
+
+/* reset sizing... should be default really */
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -34,22 +39,30 @@ a {
   color: var(--color-link);
 }
 
+h1, h2, h3{
+  color: var(--bg-dark);
+  margin: 0;
+  font-family: var(--font-bold);
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
 /* Global Header */
 .global-header {
-  /* padding-bottom: 2rem; */
-  /* padding-top: 2rem */
   text-align: center;
   font-family: var(--font-bold);
+  margin-bottom: 1rem;
 }
 
 /* Header Quote */
 .header-quote {
-  color: var(--color);
+  color: var(--theme);
   font-family: var(--font-serif);
   margin-left: auto;
   margin-right: auto;
-  max-width: 460px;
+  max-width: 600px;
   font-style: italic;
+  cursor: pointer;
 }
 
 /* Global Footer */
@@ -58,16 +71,29 @@ a {
   font-family: var(--font-serif);
   text-align: center;
   background: var(--bg-dark);
-  position: fixed;
+  width: 100%;
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: 100vw; */
+}
+
+.card.hover:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* small card, overflow hidden to cut off any children that overflow the corners */
-.card {
+.card, .card.hover:active {
   box-shadow: var(--small-shadow);
   border-radius: var(--radius);
   background: white;
   overflow: hidden;
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.profile {
+  min-height: 200px;
+  background-size: cover;
+  /* each dog is roughly centered in the shot */
+  background-position: 50% 50%;
 }

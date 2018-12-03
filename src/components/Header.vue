@@ -21,9 +21,18 @@ const quotes = [
         author: "Robert Wagner"
     },
     {
-        text:"I like dogs",
-        author: "ME"
+        text: "A dog is the only thing on earth that loves you more than you love yourself.",
+        author: "Josh Billings"
     },
+    {
+        text: "Before you get a dog, you can't quite imagine what living with one might be like; afterward, you can't imagine living any other way.",
+        author: "Caroline Knapp"
+    },
+    {
+        text: "My fashion philosophy is, if you're not covered in dog hair, your life is empty.",
+        author: "Elayne Boosler"
+    }
+
 ]
 let index = 0;
 let interval;
@@ -42,10 +51,12 @@ export default {
         }
     },
     mounted(){
+        // Removed auto quote movement because it interfered with performance on the rest of the page
+        // Either multiple running CSS transitions are a bad idea, or Vue's transition group has significant performance issues.
         // make sure the whole app has fully rendered!
-        this.$nextTick(() => {
-            interval = setInterval(this.nextQuote, 8000)
-        })
+        // this.$nextTick(() => {
+        //     interval = setInterval(this.nextQuote, 8000)
+        // })
     },
     beforeDestroy(){
         clearInterval(interval)
@@ -54,6 +65,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+cite{
+    color: var(--bg-dark);
+}
+
 .slider{
     position:relative;
     /* text-align: center; */
@@ -69,7 +85,7 @@ export default {
 
 .slide-enter-active,
 .slide-leave-active {
-    transition: all 700ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .slide-enter, .slide-leave-active{
