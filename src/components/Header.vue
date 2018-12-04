@@ -34,7 +34,7 @@ const quotes = [
     }
 
 ]
-let index = 0;
+let index = Math.floor(Math.random()*4);
 let interval;
 export default {
     data() {
@@ -85,18 +85,19 @@ cite{
 
 .slide-enter-active,
 .slide-leave-active {
-    transition: all 300ms ease-in-out;
+    transition: all 600ms ease-in-out;
 }
 
 .slide-enter, .slide-leave-active{
     opacity: 0;
 }
 
-.slide-enter{
-    transform: translateX(100px);
-}
-.slide-leave-active {
-    transform: translateX(-100px);
-}
+// removed for performance reasons... bad UX
+// .slide-enter{
+//     transform: translateX(200px);
+// }
+// .slide-leave-active {
+//     transform: translateX(-200px);
+// }
 
 </style>

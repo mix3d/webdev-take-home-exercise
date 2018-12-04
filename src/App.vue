@@ -57,13 +57,14 @@ export default {
 <style lang="scss">
 $width-small: 680px;
 
+// Fun background that effectively decided the app color scheme
 body:before {
   content:'';
   width: 100%;
   position: absolute;
   top:0;
   background: url('./assets/images/bons-and-foot-prints-pattern-background_1374-18.jpg') repeat;
-  background-size: 169px 169px; // half-size for better size and 2x crispness
+  background-size: 169px 169px; // half-size for better visual and 2x retina crispness
   height: 200px;
   z-index: -1;
 }
@@ -83,7 +84,7 @@ body:before {
     max-width: 1000px;
     border-radius: var(--radius);
     box-shadow: var(--soft-shadow);
-    margin: 80px 26px 26px;
+    margin: 40px 26px 26px;
     width:calc(100% - 52px);
   }
 }

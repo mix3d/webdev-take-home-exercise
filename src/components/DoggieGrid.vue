@@ -6,13 +6,7 @@
         :doggo="doggo">
         </doggie>
     </div>
-    <div class="pagination">
-        <img src="left-chevron.svg" alt="">
-        <div class="pages">
-            1/1
-        </div>
-        <img src="right-chevron.svg" alt="">
-    </div>
+    <pagination></pagination>
     <modal v-model="showModal">
         <big-doggie v-if="selectedDoggo" :doggo="selectedDoggo">
         </big-doggie>
@@ -24,6 +18,7 @@
 import Modal from './modals/Modal.vue'
 import BigDoggie from './DoggoModal.vue'
 import Doggie from './Doggie.vue'
+import Pagination from './Pagination.vue'
 
 export default {
     props:[
@@ -46,6 +41,7 @@ export default {
         Doggie,
         BigDoggie,
         Modal,
+        Pagination,
     }
 }
 </script>
@@ -56,21 +52,5 @@ export default {
     // Create a grid with min-width columns of 200px, stretching to fit the container
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
-}
-.pagination{
-    display: flex;
-    padding: 0 4rem;
-    margin-top: 1rem;
-    .pages{
-        flex-grow:1;
-        text-align: center;
-    }
-    img{
-        border-radius: 50%;
-        border: none;
-        float: right;
-        padding: 0.75rem;
-        box-shadow: var(--soft-shadow)
-    }
 }
 </style>
