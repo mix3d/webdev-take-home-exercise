@@ -33,13 +33,22 @@ We'll be grading on five areas:
 "Most people find out about us from internet searches. We need this page to appear towards the top of search results."
 
 ## Madison's notes:
+
+I recognize I did not stick to just fundamentals, I used Vue for the UI layer. Partially for the default setup that includes webpack with HMR for quick development and testing, partially for code corganization, but mostly because I thought I'd be able to accomplish more with my time. I also picked Vue to better handle a higher number of dogs. Assuming the would-be API did not provide pagination built in, I felt I could support a significant portion of dogs, plus reactively searching / filtering on a larger set of data that the site would likely require for users to manage sorting through that many dogs.
+
+Ultimately, however, I would like to be judged on the Design.
+
+I definitely went far beyond the initial task, filling in details I assumed a would help a would-be dog adoption facility, but also in line with all the other dog adoption websites I looked at for research. Showing more doggo information, even if randomized, makes them more personable, and being able to select favorites helps sort through a large set of data. The would-be final feature would be a dropdown list of the saved dogs, which would also give you the fullscreen image.
+
+--
+
 List of dog names from https://www.akc.org/expert-advice/lifestyle/unique-dog-names/, the images alone did not seem to evoke enough "adopt me"-ness, and I wanted to add some additional info to intrigue would-be adopters more.
 
-Background image from https://img.freepik.com/free-vector/bons-and-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg but edited for actual seamless tiling.
+Background image from https://img.freepik.com/free-vector/bons-and-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg but edited in PS for actual seamless tiling.
 
 https://fonts.google.com/specimen/Gorditas?selection.family=Gorditas|Open+Sans
 
-This font is named almost exactly like Asana's font, seemed fun, and even mentioned dogs in the description. Sold!
+The Gortitas font is named almost exactly like Asana's font, seemed fun, and even mentioned dogs in the description. Sold!
 
 # doggo
 
